@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Oct 02 21:58:23 FET 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=libs\\CoreJava-Reapply_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.antoan.reapply.WordCount
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
