@@ -1,10 +1,10 @@
 #Fat Jar Configuration File
-#Thu Oct 02 21:58:23 FET 2014
+#Sat Oct 04 01:09:53 FET 2014
 onejar.license.required=true
 manifest.classpath=
 manifest.removesigners=true
 onejar.checkbox=false
-jarname=libs\\CoreJava-Reapply_fat.jar
+jarname=jar\\wc.jar
 manifest.mergeall=true
 manifest.mainclass=com.antoan.reapply.WordCount
 manifest.file=<createnew>

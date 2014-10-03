@@ -63,10 +63,10 @@ public class WordCount {
 	 * @throws InvalidAttributesException If the text file is not specified or does not exist
 	 * @throws JSONException 
 	 */
-	public static void main(String[] args) throws InvalidAttributesException, JSONException {
+	public static void main(String[] args) throws IllegalArgumentException, JSONException {
 
 		if (args.length == 0) {
-			throw new InvalidAttributesException(
+			throw new IllegalArgumentException(
 					"Text file location is not specified as first parameter.");
 		}
 
@@ -74,7 +74,7 @@ public class WordCount {
 		File textFile = new File(textFileLocation);
 
 		if (!textFile.exists()) {
-			throw new InvalidAttributesException("Text file does not exist.");
+			throw new IllegalArgumentException("Text file does not exist.");
 		}
 		
 		CountResult result = countEverything(textFile);
@@ -92,7 +92,7 @@ public class WordCount {
 				System.out.println(result.words);
 				break;
 			default:
-				throw new InvalidAttributesException("Invalid attribute " + args[1]);
+				throw new IllegalArgumentException("Invalid attribute " + args[1]);
 			}
 		}
 		else {
